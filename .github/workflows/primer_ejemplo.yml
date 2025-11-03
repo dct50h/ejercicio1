@@ -1,0 +1,5 @@
+name: Mi primer ejemplo CI en Github action
+
+on:
+  push:
+    branches: ["main"]
