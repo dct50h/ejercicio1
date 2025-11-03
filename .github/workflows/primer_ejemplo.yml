@@ -3,3 +3,17 @@ name: Mi primer ejemplo CI en Github action
 on:
   push:
     branches: ["main"]
+
+jobs:
+  ejemplo:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: localizamos la IPl de origen
+        run: curl ifconfig.me
+
+      - name: que hora es dentro del runner
+        run: date
+        
+      - name: haz un listado de directorio
+        run: ls -la
