@@ -19,4 +19,4 @@ jobs:
         run: ls -la
 
       - name: revisamos procesos del sistema
-        run: ps
+        run: ps aux
